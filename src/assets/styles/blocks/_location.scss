@@ -1,0 +1,28 @@
+.location {
+  padding-block: 4rem;
+
+  &__map {
+    width: 100%;
+    min-height: 28rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+  }
+
+  &__marker {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .leaflet-control-attribution {
+    font-size: 0.75rem;
+  }
+
+  .leaflet-popup-content {
+    margin: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+}

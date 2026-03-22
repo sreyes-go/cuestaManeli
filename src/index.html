@@ -1,34 +1,481 @@
 <!doctype html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Descubre Cuesta Maneli, una playa virgen junto al entorno natural de Doñana."
+    />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Cuesta Maneli</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
+  <body id="top">
+    <a class="skip-link" href="#main-content">Ir al contenido principal</a>
+
+    <include src="./views/header.html"></include>
+
+    <main id="main-content">
+
+      <!-- HERO -->
+
+      <section class="hero" aria-labelledby="hero-title">
         <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
+          class="hero__image"
+          src="./assets/images/cuesta-maneli-hero.webp"
+          alt="Vista de la playa de Cuesta Maneli con arena dorada y el mar brillando bajo la luz del sol"
+          width="1440"
+          height="900"
         />
-      </picture>
-      <h1 class="uoc-title"> <i class="fas fa-university"></i> Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            Donde el sol convierte el mar en luz y la arena brilla bajo tus pies
+          </h1>
+
+          <p class="hero__subtitle">
+            Un paraíso de luz y de sal junto al Atlántico
+          </p>
+
+          <a class="hero__button" href="#informacion">Descubrir</a>
+        </div>
+      </section>
+
+      <section class="intro" id="informacion" aria-labelledby="intro-title">
+        <div class="intro__media">
+          <img
+            class="intro__image"
+            src="./assets/images/parque-donana.jpg"
+            alt="Vista del entorno de Cuesta Maneli con dunas, vegetación y el océano Atlántico al fondo"
+            width="900"
+            height="600"
+          />
+        </div>
+
+        <!-- INTRO -->
+
+        <div class="intro__content">
+          <h2 class="intro__title" id="intro-title">Cuesta Maneli, un tesoro entre dunas y océano</h2>
+
+          <p class="intro__text">
+            Situada en la costa de Huelva, entre Mazagón y Matalascañas, Cuesta Maneli forma parte
+            del espectacular entorno del Parque Natural de Doñana. Este enclave destaca por su acceso
+            a través de una larga pasarela de madera que atraviesa el pinar y conduce hasta una playa
+            abierta, luminosa y casi intacta. Su carácter virgen, el silencio del paisaje y la unión
+            entre dunas, bosque mediterráneo y Atlántico la convierten en uno de los rincones más
+            especiales del litoral andaluz.
+          </p>
+        </div>
+      </section>
+
+      <!-- LOCATION -->
+
+      <section class="location" id="ubicacion" aria-labelledby="location-title">
+        <h2 class="visually-hidden" id="location-title">Ubicación de Cuesta Maneli</h2>
+        <div
+          class="location__map"
+          id="map"
+          role="region"
+          aria-label="Mapa con la ubicación de la playa de Cuesta Maneli"
+        ></div>
+      </section>
+
+      <!-- ACCESS -->
+
+      <section class="access" id="acceso" aria-labelledby="access-title">
+        <div class="access__hero">
+          <img
+            class="access__hero-image"
+            src="./assets/images/sendero-maneli.webp"
+            alt="Pasarela de madera entre vegetación y dunas en el acceso a la playa de Cuesta Maneli"
+            width="1856"
+            height="832"
+          />
+
+          <div class="access__intro">
+            <h2 class="access__title" id="access-title">El camino hacia Cuesta Maneli</h2>
+
+            <p class="access__lead">
+              Llegar a Cuesta Maneli no consiste solo en alcanzar la playa, recorrer su pasarela te permirte disfrutar de un paisaje
+              que prepara poco a poco todos los sentidos hasta el encuentro con el Atlántico.
+            </p>
+          </div>
+        </div>
+
+        <div class="access__content">
+          <div class="access__media">
+            <img
+              class="access__image"
+              src="./assets/images/mirador-maneli.webp"
+              alt="Mirador y tramo final de la pasarela de madera con vistas al mar en Cuesta Maneli"
+              width="1856"
+              height="832"
+            />
+          </div>
+
+          <div class="access__details">
+            <h3 class="access__subtitle">Un recorrido entre dunas, pinar y brisa marina</h3>
+
+            <ul class="access__list">
+              <li class="access__item">
+                <span class="access__icon">
+                  <i class="fa-solid fa-route" aria-hidden="true"></i>
+                </span>
+
+                <div class="access__info">
+                  <strong class="access__label">Distancia:</strong>
+                  <span class="access__value">
+                    aproximadamente 1,2 kilómetros desde el aparcamiento hasta la playa.
+                  </span>
+                </div>
+              </li>
+
+              <li class="access__item">
+                <span class="access__icon">
+                  <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                </span>
+
+                <div class="access__info">
+                  <strong class="access__label">Tiempo:</strong>
+                  <span class="access__value">
+                    entre 15 y 20 minutos a paso tranquilo.
+                  </span>
+                </div>
+              </li>
+
+              <li class="access__item">
+                <span class="access__icon">
+                  <i class="fa-solid fa-arrow-turn-up" aria-hidden="true"></i>
+                </span>
+
+                <div class="access__info">
+                  <strong class="access__label">Recorrido:</strong>
+                  <span class="access__value">
+                    pasarela de madera en buen estado, con tramos amplios, zonas curvas y áreas de descanso con vistas.
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+            <p class="access__text">
+              A medida que se avanza, el olor a naturaleza y a madera tostada por el sol se mezcla con
+              la brisa salada del mar. La luz se refleja sobre la arena clara, el pinar te aisla del
+              sonido exterior y todo el camino invita a vivir el momento. Entre el silencio de los árboles,
+              el horizonte azul y la calma del océano, el acceso se convierte en una parte esencial de la
+              experiencia.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIPS -->
+
+      <section class="tips" id="consejos" aria-labelledby="tips-title">
+        <div class="tips__intro">
+          <p class="tips__eyebrow">Curiosidades y tips fotográficos</p>
+
+          <h2 class="tips__title" id="tips-title">
+            Una playa para el deleite de los sentidos
+          </h2>
+
+          <p class="tips__lead">
+            Cuesta Maneli destaca por su luz, la amplitud de su paisaje y la sensación de naturaleza intacta.
+            Para disfrutarla mejor, conviene visitarla con calma, respetar su entorno protegido y aprovechar
+            las mejores condiciones de luz para fotografiar sus dunas, su vegetación y la línea infinita del Atlántico.
+          </p>
+        </div>
+
+        <div class="tips__recommendations">
+          <img
+            class="tips__recommendations-image"
+            src="./assets/images/cuesta-maneli-panoramica.webp"
+            alt="Vista panorámica de Cuesta Maneli con la playa, los acantilados arenosos y la vegetación junto al mar"
+            width="1200"
+            height="840"
+          />
+
+          <div class="tips__recommendations-box" aria-labelledby="tips-recommendations-title">
+            <h3 class="tips__subtitle" id="tips-recommendations-title">Tips y recomendaciones</h3>
+
+            <ul class="tips__checklist">
+              <li class="tips__checklist-item">
+                <span class="tips__check-icon" aria-hidden="true">✓</span>
+                <span class="tips__check-text">Llevar agua</span>
+              </li>
+
+              <li class="tips__checklist-item">
+                <span class="tips__check-icon" aria-hidden="true">✓</span>
+                <span class="tips__check-text">No hay servicios</span>
+              </li>
+
+              <li class="tips__checklist-item">
+                <span class="tips__check-icon" aria-hidden="true">✓</span>
+                <span class="tips__check-text">Respeta el entorno</span>
+              </li>
+
+              <li class="tips__checklist-item">
+                <span class="tips__check-icon" aria-hidden="true">✓</span>
+                <span class="tips__check-text">Zona protegida</span>
+              </li>
+
+              <li class="tips__checklist-item">
+                <span class="tips__check-icon" aria-hidden="true">✓</span>
+                <span class="tips__check-text">Mejor época: primavera y otoño</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tips__photo-block">
+          <div class="tips__photo-media">
+            <img
+              class="tips__photo-image"
+              src="./assets/images/cuesta-maneli-dunas.webp"
+              alt="Dunas y vegetación mediterránea en el entorno de Cuesta Maneli bajo una luz suave"
+              width="1200"
+              height="840"
+            />
+          </div>
+
+          <div class="tips__photo-content">
+            <h3 class="tips__subtitle">📸 Consejos para fotografiarla</h3>
+
+            <ul class="tips__photo-list">
+              <li class="tips__photo-item">
+                <strong class="tips__photo-label">Mejor hora:</strong>
+                <span class="tips__photo-text">atardecer</span>
+              </li>
+
+              <li class="tips__photo-item">
+                <strong class="tips__photo-label">Zona más interesante:</strong>
+                <span class="tips__photo-text">dunas y relieves de arena</span>
+              </li>
+
+              <li class="tips__photo-item">
+                <strong class="tips__photo-label">Evitar:</strong>
+                <span class="tips__photo-text">viento fuerte y arena en suspensión</span>
+              </li>
+            </ul>
+
+            <p class="tips__text">
+              A última hora del día, la luz se vuelve más cálida y envolvente, resaltando los tonos dorados de la
+              arena y el contraste con el azul del océano. La zona de dunas ofrece encuadres muy expresivos,
+              con líneas naturales, texturas y desniveles que aportan profundidad a la imagen.
+            </p>
+          </div>
+        </div>
+
+        <div class="tips__story">
+          <div class="tips__story-content">
+            <h3 class="tips__subtitle">Un paisaje marcado por el incendio y su recuperación</h3>
+
+            <p class="tips__text">
+              En 2017, el incendio de Las Peñuelas afectó gravemente a una amplia zona del entorno de Doñana,
+              dejando una huella profunda en el paisaje. Desde entonces se han impulsado distintas actuaciones de
+              restauración ambiental, reforestación, remediación y planificación ecológica para favorecer la recuperación
+              de la vegetación y mejorar la resiliencia del espacio natural.
+            </p>
+
+            <p class="tips__text">
+              Hoy, aunque todavía existen áreas donde esa cicatriz forma parte de la memoria del lugar, el entorno muestra
+              signos visibles de regeneración y sigue siendo un ejemplo de la fragilidad y la fuerza de los paisajes protegidos.
+              Visitar Cuesta Maneli también implica comprender ese equilibrio y la necesidad de conservarlo.
+            </p>
+          </div>
+
+          <div class="tips__story-media">
+            <img
+              class="tips__story-image"
+              src="./assets/images/cuesta-maneli-entorno-recuperacion.webp"
+              alt="Entorno natural de Cuesta Maneli con arena, vegetación y cielo abierto en el paisaje litoral de Doñana"
+              width="1366"
+              height="768"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+
+      <section class="gallery" id="galeria" aria-labelledby="gallery-title">
+        <div class="gallery__intro">
+          <p class="gallery__eyebrow">Galería</p>
+          <h2 class="gallery__title" id="gallery-title">Fragmentos de luz, arena y horizonte</h2>
+          <p class="gallery__lead">
+            Una selección de imágenes para recorrer Cuesta Maneli a través de su pasarela, sus
+            dunas, la textura de la arena y la luz del Atlántico.
+          </p>
+        </div>
+
+        <div class="gallery__track" tabindex="0" aria-label="Carrusel horizontal de imágenes de Cuesta Maneli">
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <img
+                  class="gallery__image"
+                  src="./assets/images/cuesta-maneli-hero.webp"
+                  alt="Vista luminosa de la playa de Cuesta Maneli con arena dorada y el océano Atlántico"
+                  width="1500"
+                  height="1000"
+                />
+              </figure>
+            </li>
+
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <img
+                  class="gallery__image"
+                  src="./assets/images/parque-donana.jpg"
+                  alt="Entorno natural de Doñana con vegetación, dunas y costa en Cuesta Maneli"
+                  width="900"
+                  height="600"
+                />
+              </figure>
+            </li>
+
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <img
+                  class="gallery__image"
+                  src="./assets/images/sendero-maneli.webp"
+                  alt="Pasarela de madera entre vegetación y dunas en el acceso a Cuesta Maneli"
+                  width="1856"
+                  height="1237"
+                />
+              </figure>
+            </li>
+
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <img
+                  class="gallery__image"
+                  src="./assets/images/mirador-maneli.webp"
+                  alt="Tramo final de la pasarela con vistas abiertas al mar en Cuesta Maneli"
+                  width="1856"
+                  height="1237"
+                />
+              </figure>
+            </li>
+
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <img
+                  class="gallery__image"
+                  src="./assets/images/cuesta-maneli-panoramica.webp"
+                  alt="Vista panorámica de Cuesta Maneli con línea de costa, dunas y vegetación litoral"
+                  width="1200"
+                  height="800"
+                />
+              </figure>
+            </li>
+
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <img
+                  class="gallery__image"
+                  src="./assets/images/cuesta-maneli-dunas.webp"
+                  alt="Dunas claras y vegetación mediterránea junto al mar en Cuesta Maneli"
+                  width="1200"
+                  height="800"
+                />
+              </figure>
+            </li>
+
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <img
+                  class="gallery__image"
+                  src="./assets/images/cuesta-maneli-pasarela-atardecer-01.webp"
+                  alt="Escaleras de madera que descienden hacia la playa de Cuesta Maneli con luz de atardecer"
+                  width="1200"
+                  height="800"
+                />
+              </figure>
+            </li>
+
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <img
+                  class="gallery__image"
+                  src="./assets/images/cuesta-maneli-pasarela-atardecer-02.webp"
+                  alt="Pasarela de madera y vista de la orilla de Cuesta Maneli bajo la luz del sol"
+                  width="1600"
+                  height="1067"
+                />
+              </figure>
+            </li>
+
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <img
+                  class="gallery__image"
+                  src="./assets/images/cuesta-maneli-acantilado-asperillo.webp"
+                  alt="Acantilados arenosos del Asperillo con la playa y el mar azul en Cuesta Maneli"
+                  width="1200"
+                  height="800"
+                />
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION NAV -->
+
+      <section class="section-nav" aria-labelledby="section-nav-title">
+        <h2 class="visually-hidden" id="section-nav-title">
+          Navegación por secciones de Cuesta Maneli
+        </h2>
+
+        <div class="section-nav__grid">
+          <a class="section-nav__link" href="#top">
+            <span class="section-nav__icon" aria-hidden="true">
+              <i class="fa-regular fa-house"></i>
+            </span>
+            <span class="section-nav__label">Home</span>
+          </a>
+
+          <a class="section-nav__link" href="#informacion">
+            <span class="section-nav__icon" aria-hidden="true">
+              <i class="fa-solid fa-info"></i>
+            </span>
+            <span class="section-nav__label">Información</span>
+          </a>
+
+          <a class="section-nav__link" href="#ubicacion">
+            <span class="section-nav__icon" aria-hidden="true">
+              <i class="fa-regular fa-map"></i>
+            </span>
+            <span class="section-nav__label">Ubicación</span>
+          </a>
+
+          <a class="section-nav__link" href="#acceso">
+            <span class="section-nav__icon" aria-hidden="true">
+              <i class="fa-solid fa-person-walking"></i>
+            </span>
+            <span class="section-nav__label">Acceso</span>
+          </a>
+
+          <a class="section-nav__link" href="#consejos">
+            <span class="section-nav__icon" aria-hidden="true">
+              <i class="fa-regular fa-star"></i>
+            </span>
+            <span class="section-nav__label">Curiosidades</span>
+          </a>
+
+          <a class="section-nav__link" href="#galeria">
+            <span class="section-nav__icon" aria-hidden="true">
+              <i class="fa-regular fa-camera"></i>
+            </span>
+            <span class="section-nav__label">Galería</span>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
