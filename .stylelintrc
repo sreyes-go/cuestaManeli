@@ -9,6 +9,7 @@
     "selector-max-id": 1,
 
     "color-hex-length": "short",
+    "color-hex-case": "lower",
 
     "declaration-block-no-duplicate-properties": true,
 
@@ -24,6 +25,8 @@
         "ignore": ["after-comment"]
       }
     ],
+
+    "max-empty-lines": 1,
 
     "declaration-empty-line-before": null,
 

@@ -49,6 +49,8 @@
     "stylelint-scss": "^7.0.0"
   },
   "dependencies": {
+    "@fontsource/lora": "^5.2.8",
+    "@fontsource/source-sans-pro": "^5.2.5",
     "@fortawesome/fontawesome-free": "^7.2.0",
     "leaflet": "^1.9.4"
   }

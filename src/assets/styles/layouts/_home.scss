@@ -1,60 +1,93 @@
-@use "../variables";
+@use "../variables" as v;
 
-* {
+html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  padding: 2rem;
-  font-family: variables.$font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: variables.$uoc-bg;
-  color: variables.$uoc-corporate;
+  font-family: v.$font-family-sans-serif;
+  font-size: v.$font-size-base;
+  line-height: 1.5;
+  background-color: v.$color-background-light;
+  color: v.$color-text-dark;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow:
-    0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.uoc-logo {
+img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
+  max-width: 100%;
   height: auto;
-
-  @media (min-width: variables.$mqMinWidth) {
-    max-width: none;
-  }
 }
 
-.uoc-title {
-  font-family: variables.$font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: variables.$uoc-corporate;
-
-  @media (min-width: variables.$mqMinWidth) {
-    font-size: 36px;
-  }
+a {
+  color: v.$color-text-dark;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+a:hover {
+  color: v.$color-link-hover;
+}
+
+a:focus {
+  color: v.$color-link-focus;
+}
+
+a:focus-visible {
+  color: v.$color-link-focus;
+  outline: 2px solid v.$color-link-focus;
+  outline-offset: 0.25rem;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+h1 {
+  font-family: v.$font-family-serif;
+  font-weight: 400;
+}
+
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background-color: v.$color-background-dark;
+  color: v.$color-text-light;
+  transform: translateY(-200%);
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
 }

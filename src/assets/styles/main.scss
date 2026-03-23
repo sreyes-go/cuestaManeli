@@ -2,7 +2,13 @@
  * Use this file to import partials.
  * Do not include SCSS code in this file.
  */
-@use 'blocks/location';
+@use "blocks/hero";
+@use "blocks/intro";
+@use "blocks/location";
+@use "blocks/access";
+@use "blocks/tips";
+@use "blocks/gallery";
+@use "blocks/section-nav";
 
 /**
  * Import dependencies
@@ -15,6 +21,8 @@
  */
 
 @use "layouts/home";
+@use "layouts/header";
+@use "layouts/footer";
 
 /**
  * Do NOT include anything else in this file!
