@@ -2,22 +2,15 @@
   "extends": ["stylelint-config-recommended-scss"],
   "rules": {
     "selector-class-pattern": "^[a-z]([a-z0-9-]+)?(__[a-z0-9]+(?:-[a-z0-9]+)*)?(--[a-z0-9]+(?:-[a-z0-9]+)*)?$",
-
     "max-nesting-depth": 4,
     "selector-max-compound-selectors": 4,
-
     "selector-max-id": 1,
-
     "color-hex-length": "short",
-    "color-hex-case": "lower",
-
     "declaration-block-no-duplicate-properties": true,
-
     "value-no-vendor-prefix": true,
     "property-no-vendor-prefix": true,
     "selector-no-vendor-prefix": true,
     "media-feature-name-no-vendor-prefix": true,
-
     "rule-empty-line-before": [
       "always",
       {
@@ -25,11 +18,7 @@
         "ignore": ["after-comment"]
       }
     ],
-
-    "max-empty-lines": 1,
-
     "declaration-empty-line-before": null,
-
     "scss/at-mixin-pattern": "^[a-z][a-z0-9-]*$"
   }
 }
