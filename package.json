@@ -49,6 +49,7 @@
     "stylelint-scss": "^7.0.0"
   },
   "dependencies": {
+    "@fontsource-variable/montserrat": "^5.2.8",
     "@fontsource/lora": "^5.2.8",
     "@fontsource/source-sans-pro": "^5.2.5",
     "@fortawesome/fontawesome-free": "^7.2.0",

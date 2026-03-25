@@ -8,10 +8,12 @@
 
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
 
-/* Lora - títulos */
+/* Lora / Montserrat - títulos */
 @import "npm:@fontsource/lora/400.css";
 @import "npm:@fontsource/lora/700.css";
 
-/* Source Sans 3 - texto */
+@import "npm:@fontsource-variable/montserrat/wght.css";
+
+/* Source Sans Pro - texto */
 @import "npm:@fontsource/source-sans-pro/400.css";
 @import "npm:@fontsource/source-sans-pro/700.css";

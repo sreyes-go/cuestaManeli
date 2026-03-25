@@ -1,0 +1,133 @@
+@use "../variables" as v;
+
+.footer {
+  width: 100%;
+  padding: clamp(32px, 6vw, 56px) clamp(16px, 2vw, 24px);
+  background-color: v.$color-background-dark;
+  color: v.$color-text-light;
+}
+
+/* CONTENEDOR GENERAL */
+
+.footer__author,
+.footer__brand,
+.footer__social,
+.footer__uoc {
+  max-width: v.$max-width;
+  margin: 0 auto;
+}
+
+/* --- BLOQUE BRAND  --- */
+
+.footer__brand {
+  margin-bottom: clamp(24px, 5vw, 40px);
+  padding-bottom: clamp(16px, 3vw, 24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  max-width: 750px;
+}
+
+.footer__brand-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo {
+  width: auto;
+  height: clamp(28px, 4vw, 40px);
+}
+
+/* --- BLOQUE PROFILE --- */
+
+.footer__author {
+  margin-bottom: clamp(24px, 5vw, 50px);
+}
+
+.footer__profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: clamp(24px, 6vw, 50px);
+}
+
+.footer__photo {
+  justify-self: end;
+  width: clamp(80px, 10vw, 160px);
+  border-radius: 50%;
+}
+
+.footer__identity {
+  justify-self: start;
+  max-width: 400px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.footer__name {
+  margin: 0;
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 600;
+}
+
+.footer__role {
+  margin: 0;
+  font-size: clamp(11px, 2vw, 13px);
+  line-height: 1;
+}
+
+/* --- BLOQUE SOCIAL --- */
+
+.footer__social {
+  margin-bottom: clamp(24px, 5vw, 32px);
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(12px, 2vw, 20px);
+}
+
+.footer__social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: v.$color-text-light;
+}
+
+/* --- BLOQUE UOC --- */
+
+.footer__uoc {
+  text-align: center;
+}
+
+.footer__uoc-copyright {
+  margin: 0;
+  font-size: clamp(11px, 1.2vw, 13px);
+  line-height: 1.4;
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: v.$mqMobile),
+(max-width: v.$mqTablet) {
+  .footer__brand {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .footer__profile {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: clamp(25px, 4vw, 30px);
+  }
+
+  .footer__photo {
+    justify-self: center;
+  }
+
+  .footer__identity {
+    justify-self: center;
+    text-align: center;
+  }
+}

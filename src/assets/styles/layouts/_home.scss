@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  font-family: v.$font-family-sans-serif;
+  font-family: v.$font-family-base;
   font-size: v.$font-size-base;
   line-height: 1.5;
   background-color: v.$color-background-light;
@@ -57,9 +57,24 @@ ol {
 }
 
 h1 {
-  font-family: v.$font-family-serif;
-  font-weight: 400;
+  font-family: v.$font-family-heading;
+  font-weight: 500;
+  color: v.$color-text-light;
+  font-size: clamp(0.9rem, 2.2vw, 4rem);
 }
+
+h2 {
+  font-family: v.$font-family-heading;
+  font-weight: 700;
+  font-size: clamp(0.8rem, 3vw, 1.5rem);
+}
+
+h3 {
+  font-family: v.$font-family-base;
+  font-weight: 700;
+  font-size: clamp(1rem, 3vw, 1.3rem);
+}
+
 
 .skip-link {
   position: absolute;

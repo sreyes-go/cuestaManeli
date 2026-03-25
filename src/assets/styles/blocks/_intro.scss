@@ -1,0 +1,30 @@
+@use "../variables" as v;
+
+.intro {
+  max-width: v.$max-width;
+  margin: 0 auto;
+  padding: clamp(1rem, 4vw, 3rem) 1rem;
+  text-align: center;
+
+  &__media {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  &__content {
+    width: 100%;
+    margin: 1rem auto 0;
+  }
+
+  &__text {
+    margin: 1rem 0 0;
+    text-align: left;
+  }
+}

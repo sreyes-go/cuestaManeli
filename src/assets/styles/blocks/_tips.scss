@@ -1,0 +1,173 @@
+@use "../variables" as v;
+
+.tips {
+  width: 100%;
+  text-align: center;
+
+  &__intro {
+    max-width: v.$max-width;
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 3rem) 1rem;
+  }
+
+  &__eyebrow {
+    margin: 0 0 0.35rem;
+    font-family: v.$font-family-heading;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__lead {
+    margin: clamp(1rem, 2vw, 1.5rem) auto 0;
+    max-width: 60rem;
+  }
+
+  &__recommendations {
+    position: relative;
+    width: 100%;
+  }
+
+  &__recommendations-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__recommendations-box {
+    position: absolute;
+    bottom: clamp(2rem, 3vw, 4rem);
+    left: clamp(3rem, 4vw, 6rem);
+    z-index: 1;
+    width: min(18rem, calc(50% - 2rem));
+    padding: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+
+    .tips__subtitle,
+    .tips__checklist {
+      color: v.$color-text-light;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  &__checklist {
+    margin-top: clamp(0.75rem, 2vw, 1.25rem);
+  }
+
+  &__checklist-item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.75rem;
+    font-size: clamp(0.8rem, 1.2vw, 0.9rem);;
+
+    & + & {
+      margin-top: 0.75rem;
+    }
+  }
+
+  &__check-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.65rem;
+    height: 1.65rem;
+    border: 1px solid v.$color-text-light;
+    border-radius: 50%;
+    flex: 0 0 auto;
+  }
+
+  &__check-text {
+    text-align: center;
+  }
+
+  &__photo-block,
+  &__story {
+    max-width: v.$max-width;
+    margin: 0 auto;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  &__photo-media,
+  &__story-media {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__photo-image,
+  &__story-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__photo-content,
+  &__story-content {
+    margin: clamp(1rem, 3vw, 1.5rem) auto 0;
+    text-align: center;
+  }
+
+  &__photo-list {
+    margin-top: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  &__photo-item {
+    & + & {
+      margin-top: 0.75rem;
+    }
+  }
+
+  &__text {
+    margin-top: clamp(1rem, 2vw, 1.5rem);
+    text-align: left;
+  }
+
+  @media (width <= v.$mqMobile) {
+    .tips {
+        &__recommendations-box {
+        top: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        left: 1rem;
+        width: auto;
+        padding: 1rem;
+        }
+
+        &__checklist {
+        margin-top: 1.5rem;
+        }
+
+        &__checklist-item {
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        & + & {
+            margin-top: 0.5rem;
+        }
+        }
+
+        &__check-text {
+        line-height: 1.2;
+        }
+
+        &__check-icon {
+        width: 1rem;
+        height: 1rem;
+        margin-top: 0.2rem;
+        }
+    }
+  }
+}
