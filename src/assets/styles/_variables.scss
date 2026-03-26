@@ -18,9 +18,9 @@ $color-background-dark: #000;
 $color-link-hover: #7fc9c3;
 $color-link-focus: #2f7f79;
 
-$font-size-base: clamp(0.8rem, 1.2vw, 1rem);
+$font-size-base: clamp(0.9rem, 1.2vw, 1rem);
 
 $max-width: 1200px;
 
-$mqMobile: 420px;
-$mqTablet: 768px;
+$mqMobile: 480px;
+$mqTablet: 780px;
