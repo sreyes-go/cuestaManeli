@@ -96,8 +96,8 @@
   &__photo-block,
   &__story {
     max-width: v.$max-width;
-    margin: 0 0.5rem;
-    padding: 0.5rem;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
     text-align: center;
   }
 
